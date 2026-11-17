@@ -16,10 +16,10 @@
 | Lead | 用户当前选定模型 | docs/phase1-planning | AGENTS、README、集成及验收记录 | 审核真实 diff、来源及产物 |
 | Requirements | gpt-6-luna | docs/requirements | requirements.md、acceptance.md | 可执行验收步骤、状态/数据语义完整 |
 | Platform | gpt-6-luna | docs/architecture | architecture.md、decisions.md | 官方证据、模块边界、决策待批准 |
-| Design | gpt-6-luna | docs/design | Figma、design.md | 编辑图层、状态、主流程、组合截图 |
+| Design | gpt-6-luna | docs/phase1-review | Figma、design.md | 编辑图层、状态、主流程、组合截图 |
 | Reviewer | gpt-6-luna | 独立审查任务 | 只读实际产物，提交审查结论给 Lead | 发现有据可查、修复后复核 |
 
-三个执行 Worktree 已通过 Codex 原生工具实际创建，均从已提交的规范基线派生。原生多 Agent 与指定 Luna 模型均已启动成功。完成后的文档提交由 Lead 逐一复核并 cherry-pick 到评审分支；任务分支保留供追溯。
+三个执行 Worktree 已通过 Codex 原生工具实际创建，均从已提交的规范基线派生。Lead另有独立集成Worktree，主目录保持用户当前检出状态。原生多 Agent 与指定 Luna 模型均已启动成功。完成后的文档差异由Lead逐一复核并在评审分支生成经过元数据检查的提交；任务分支保留供本地追溯。
 
 ## 环境检查结果
 

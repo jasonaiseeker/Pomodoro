@@ -6,41 +6,45 @@
 
 [Figma：Pomodoro](https://www.figma.com/design/4U9TTroE0k4Rkef4K9LIG7/Pomodoro)
 
-当前画布包含五种 280×220 主卡片状态（idle 25:00、running 18:42、paused 18:42、break 05:00、completed 00:00）、200×64 mini、设置、休眠/崩溃恢复、数据管理，以及托盘菜单与主流程说明。节点保持可编辑文字和矢量图层。
+画布有五个 280×220 主卡片（idle 25:00、running 18:42、paused 18:42、break 05:00、completed 00:00）、200×64 mini、设置、休眠/崩溃恢复、数据管理、两类删除确认与成功示意，以及托盘菜单说明。主卡片、状态板、对话框均由可编辑文字和矢量图层构成。
 
-设计使用深色中性底、橙色专注操作、绿色休息状态；数字采用 Inter，中文采用 Noto Sans SC。当前文件没有本地颜色变量，组件查询已有 Button 与 Switch library sets；页面使用独立视觉控件构成状态展示。截图检查了 Idle 卡片 280×220 导出边界。
+整体采用深色中性底、橙色专注、绿色休息。产品文本使用 Noto Sans SC，计时数字使用 Inter。复用已导入的 Material 3 Button 和 Switch variants：设置完成按钮与置顶/音效两个开关为组件实例。Button variant 自带 Roboto 标签及紫色样式；此外观作为本次评审提案。
 
-## 交互和状态约定
+## 点击流程
 
-评审流程：开始专注 → 暂停 ↔ 继续 → 完成 → 开始休息；设置通过完成返回；mini 展开；主界面关闭后隐藏至托盘。托盘提供显示/隐藏、暂停/继续、设置、退出；正在进行时退出需确认。自动开始下一轮默认关闭。
+Figma 原型设置了 ON_CLICK / NAVIGATE：
 
-休眠时暂停计时，锁屏继续；应用崩溃恢复时询问用户并保留暂停时间，不自动补完成。完成状态等待用户下一步。数据页展示今日记录、JSON/CSV 导出和删除二次确认。
+- idle 开始 → running；running 暂停 → paused；paused 继续 → running。
+- completed 开始休息 → break；break 跳过 → idle。
+- mini 展开 → running。各主卡片的“设置 / 收起”共用标签当前跳转settings；mini画板可单独预览。将设置与收起拆为两个独立入口列入设计修订项。
+- 设置完成按钮的透明点击热区 → idle。
+- 数据管理清空历史 → 确认；取消 → 数据管理；确认 → 清空完成；返回 → 数据管理。
+- 永久清除 → 单独确认；取消 → 数据管理；确认 → 永久清除完成示意。
 
-画板中的操作控件目前是可编辑视觉原型，主流程的真实 Figma prototype 连线与行为尚未建立。阶段评审前由设计复核补齐可操作原型或明确以状态板作为评审形式。
+## 产品语义
 
-## 节点清单
+自动开始下一轮首版关闭，界面显示静态说明，已移除该开关入口。完成状态等待用户操作，并可选择内置短提示音，默认关闭。休眠时暂停，锁屏时继续；崩溃恢复时询问并保持暂停时间。
 
-- Idle: `8:2`
-- Running: `8:9`
-- Paused: `8:16`
-- Break: `8:23`
-- Completed: `8:30`
-- Mini: `8:37`
-- Settings: `8:41`
-- Recovery: `8:49`
-- Data management: `8:55`
-- Tray menu label: `8:64`
-- Flow note: `8:65`
+清空历史先备份后删除，保留配置和当前活动。永久清除在结束活动后删除数据库、配置和应用备份，并停止新建备份。托盘菜单列出显示/隐藏、暂停/继续、设置、退出；进行中退出需确认，关闭窗口隐藏到托盘。
+
+## 画板框架 IDs
+
+- Idle `8:2`; Running `8:9`; Paused `8:16`; Break `8:23`; Completed `8:30`。
+- Mini `8:37`; Settings `8:41`; Recovery `8:49`; Data management `8:55`。
+- Clear history confirmation `9:488`; Delete success `9:527`。
+- Permanent erase confirmation `10:27`; Permanent erase complete `10:34`。
 
 ## 验收记录
 
-- Figma 文件起始页为空；Noto Sans SC 与 Inter 字体族及所用样式可用。
-- 已创建可编辑原型图层；各主要框架尺寸与布局由写入返回数据核对。
-- Idle 卡片截图导出成功，尺寸 280×220。全画布视觉复核与可点击流程验证待独立审查。
-- 项目源码、Cargo 工程及业务功能未创建。
+- 已成功导入并使用 Button component set key `ab924dce8b851fd820bd0d56da24a9c489311ae6`、Switch component set key `1f6ff0e7afa1181d166c5dbd3856ba6135b75019`；变体与实例 ID 记录在本地 ledger。
+- 设计Agent检查框架尺寸、层级及主流程reaction；字体断言为Noto Sans SC、Inter及库Button内部的Roboto。Lead随后通过浏览器检查实际画布。
+- Figma连接器达到Starter调用上限后，Lead改用浏览器原生UI复核。实际修复永久清除正文截断、清空历史确认的重复标题/正文，并移除自动开始开关。编辑过程产生的一处多余顶层文字已移除，最终图层列表及画布已复核。
+- 浏览器实际点击确认：idle `8:2` → running `8:9` → paused `8:16` → running `8:9` → settings `8:41`，URL中的node-id与画面状态对应。
+- 最终截图检查包括两类删除确认的放大视图、设置页以及完整画布。截图证据保留在本次聊天的工具记录；[此前组合截图](https://www.figma.com/api/mcp/asset/ee18d548-6491-47ea-a90d-8577127253b2.png)为修订前快照。
+- 本任务未创建 Cargo 工程或业务代码。产品语义仍为评审提案。
 
-## 待评审
+## 本次评审需关注
 
-1. 确认休息卡片是否提供“跳过休息”操作。
-2. 确认数据删除的范围选择（今天或全部）是否满足首版。
-3. 确认主流程 prototype 连线后，进行可点击性和布局独立验收。
+- 原型为固定示例状态；计时数字和删除成功画面用于交互评审。
+- 当前主要动作的prototype热区依附文字，点击按钮边缘时有区域未覆盖。设计确认后的下一轮修订将热区扩到完整按钮，并拆分设置/收起入口。
+- 设置时长暂以文字显示，字段校验、退出确认、错误与全部恢复分支按需求及验收矩阵在下一轮交互细化中补齐。现有13个画板覆盖核心状态及两类数据删除流程。
