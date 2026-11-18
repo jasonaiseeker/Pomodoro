@@ -23,6 +23,7 @@
 - [Figma](https://www.figma.com/design/4U9TTroE0k4Rkef4K9LIG7/Pomodoro)：v1原生稿；v2同步状态单独登记。
 - [GitHub Issues](https://github.com/troywjz/Pomodoro/issues)：任务与依赖。
 - 本轮统一文档/设计基线通过独立PR提交，保持未合并，main不直接推进。
+- [统一基线 PR #21](https://github.com/troywjz/Pomodoro/pull/21)替代已关闭PR #17；当前只保留M0-UI #18、契约 #19和等待依赖的后续基线 #20。
 
 ## 下一步
 
