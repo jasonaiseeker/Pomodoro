@@ -1,0 +1,93 @@
+[
+  {
+    "role": "product",
+    "source_commit": "e66af6a6a954cccfbb264fc7e5bfdb4301cd72ff",
+    "source_path": "docs/team/product/requirements-v0.2.md",
+    "source_blob": "4e4178b0c2921fd87e1883db44c3a7462421e9d5",
+    "archive_path": "docs/archive/role-studies/product/requirements-v0.2.md"
+  },
+  {
+    "role": "design",
+    "source_commit": "604a677d5da45762897240eb314a2da0027e36e8",
+    "source_path": "docs/team/design/pomodoro-ui-v2-preview.png",
+    "source_blob": "190b11801c9bbdaa3ec83ea84ef6108d96f88bf5",
+    "archive_path": "docs/archive/role-studies/design/pomodoro-ui-v2-preview.png"
+  },
+  {
+    "role": "design",
+    "source_commit": "604a677d5da45762897240eb314a2da0027e36e8",
+    "source_path": "docs/team/design/pomodoro-ui-v2.svg",
+    "source_blob": "ea637222c0023542fb9824a41e57588f8f30b536",
+    "archive_path": "docs/archive/role-studies/design/pomodoro-ui-v2.svg"
+  },
+  {
+    "role": "design",
+    "source_commit": "604a677d5da45762897240eb314a2da0027e36e8",
+    "source_path": "docs/team/design/ui-v2-review.md",
+    "source_blob": "4ba17449030f01764466748d61cb72906f2f620c",
+    "archive_path": "docs/archive/role-studies/design/ui-v2-review.md"
+  },
+  {
+    "role": "frontend",
+    "source_commit": "c612f45a8b58cdeea966bf80a2c8d11d8f79c20e",
+    "source_path": "docs/team/frontend/slint-ui-proposal.md",
+    "source_blob": "e176003930c3b8f34e9d237d97be9795c1532a90",
+    "archive_path": "docs/archive/role-studies/frontend/slint-ui-proposal.md"
+  },
+  {
+    "role": "backend-timer",
+    "source_commit": "5611efad7659eff005e38344efa9bd8d9f300854",
+    "source_path": "docs/team/backend-timer/timer-core-proposal.md",
+    "source_blob": "fdd9f3675b0458172945db3507e8caf0a02f85f8",
+    "archive_path": "docs/archive/role-studies/backend-timer/timer-core-proposal.md"
+  },
+  {
+    "role": "backend-recovery",
+    "source_commit": "0af4091de5198799b8bf41e6796a02c6d17ff4e4",
+    "source_path": "docs/team/backend-recovery/recovery-protocol.md",
+    "source_blob": "6fe74cfa37ed9f50b6edb88a88e2322db894a29b",
+    "archive_path": "docs/archive/role-studies/backend-recovery/recovery-protocol.md"
+  },
+  {
+    "role": "backend-window",
+    "source_commit": "0078362149a0a6d4b4912f14f61c3894d50517b2",
+    "source_path": "docs/team/backend-window/window-adapter-contract.md",
+    "source_blob": "a510c10ee681e1bd134400bc422a31062bb26a88",
+    "archive_path": "docs/archive/role-studies/backend-window/window-adapter-contract.md"
+  },
+  {
+    "role": "backend-tray",
+    "source_commit": "934c32a923c20fb3fe51c192b43e82d504e42127",
+    "source_path": "docs/team/backend-tray/tray-lifecycle.md",
+    "source_blob": "10a23d307e1422c53c5dea8c1ac2fac30bbcc563",
+    "archive_path": "docs/archive/role-studies/backend-tray/tray-lifecycle.md"
+  },
+  {
+    "role": "backend-statistics",
+    "source_commit": "8f938c866ded41f7fc7b4a96ffbe395bb41282cd",
+    "source_path": "docs/team/backend-statistics/proposal.md",
+    "source_blob": "3529ed3c3cba6a6ff5a4bb70bf46caa750412c1c",
+    "archive_path": "docs/archive/role-studies/backend-statistics/proposal.md"
+  },
+  {
+    "role": "backend-data",
+    "source_commit": "1b96388cb6526c3ba2b8a86da383445314d1bd13",
+    "source_path": "docs/team/backend-data/data-operations.md",
+    "source_blob": "554b50f5acbeb4bdd796dbec9b7b28f73d34addd",
+    "archive_path": "docs/archive/role-studies/backend-data/data-operations.md"
+  },
+  {
+    "role": "database",
+    "source_commit": "757fa4069b129a9f280ffd2cb1eed38392133b6a",
+    "source_path": "docs/team/database/repository-proposal.md",
+    "source_blob": "e71bda14d69e084e774461cbdc8771893612c2c8",
+    "archive_path": "docs/archive/role-studies/database/repository-proposal.md"
+  },
+  {
+    "role": "testing",
+    "source_commit": "939aac9c092e4387838bcfdf0b3e59d40d40853e",
+    "source_path": "docs/team/testing/review-v2.md",
+    "source_blob": "8fa5df3e1ac38a3c61d98b74434e53daf299259c",
+    "archive_path": "docs/archive/role-studies/testing/review-v2.md"
+  }
+]

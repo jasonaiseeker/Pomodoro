@@ -1,5 +1,7 @@
 # Pomodoro Windows 架构提案
 
+> 技术候选仍待用户批准；本轮组织责任已按[模块边界](architecture/modules.md)重整，跨角色待决项统一在[评审包](contracts/review-packet.md)处理。
+
 **状态：待审批（技术研究草案）**
 **关联：** [GitHub Issue #2](https://github.com/troywjz/Pomodoro/issues/2)
 **目标环境：** Windows 11 x64；主机检测到 MSVC，当前 Rust 未在 PATH 中。`HypervisorPresent=True` 记录为环境线索，Hyper-V 场景仍需实际验收。
