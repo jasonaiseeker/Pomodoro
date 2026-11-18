@@ -1,5 +1,7 @@
 # Windows 悬浮番茄钟需求草案
 
+> v0.1历史基线；当前UI增量与46项AC见[产品v0.2](product/requirements-v0.2.md)和[验收主表](acceptance.md)。未变更计时/数据行为继续作为候选输入，批准范围以[项目状态](project-state.md)为准。
+
 - 状态：草案，待需求评审
 - 来源：GitHub Issue [#1](https://github.com/troywjz/Pomodoro/issues/1)
 - 产品目标：面向 Windows 桌面与 Hyper-V 工作场景的轻量悬浮番茄钟，支持可靠计时、系统托盘与离线本地数据。

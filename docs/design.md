@@ -1,5 +1,7 @@
 # UI 原型评审快照
 
+> v1历史快照。当前四项UI调整和本地设计证据见[UI v2](design/ui-v2/ui-v2-review.md)，原生Figma同步状态与未决检查单独记录。
+
 状态：草案，等待用户评审。来源：Figma 原型（Page 1）。关联任务：[Issue #3](https://github.com/troywjz/Pomodoro/issues/3)。
 
 ## 原型

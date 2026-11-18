@@ -1,0 +1,2 @@
+# Keep editable SVG source bytes stable across Windows checkouts.
+*.svg text eol=lf

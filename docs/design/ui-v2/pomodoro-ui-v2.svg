@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1000" viewBox="0 0 1760 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Pomodoro UI v2 — editable review boards</title>
+  <desc id="desc">Four editable vector boards: light and dark themes, expanded and collapsed. Each sample uses an equal 192 logical pixel window width; the layout scales to the physical display width divided by ten.</desc>
+  <defs>
+    <style>
+      text{font-family:Inter,Segoe UI,Arial,sans-serif}.label{font-size:30px;font-weight:700}.meta{font-size:22px}.timer{font-size:60px;font-weight:700;letter-spacing:1px}.small{font-size:20px}.button{font-size:28px;font-weight:600}.token{font-size:24px}
+    </style>
+  </defs>
+  <rect width="1760" height="1000" fill="#eef1f5"/>
+  <text x="44" y="54" font-size="54" font-weight="700" fill="#172033">Pomodoro · UI v2</text>
+  <text x="44" y="94" font-size="28" fill="#586174">Review draft · 192 logical px sample · equal width across expanded/collapsed</text>
+  <g id="board-light-expanded" transform="translate(44 190)">
+    <text class="label" x="0" y="0" fill="#172033">01 · Light / expanded</text><text class="meta" x="0" y="42" fill="#596579">192 × 300 logical · Light default</text>
+    <rect x="0" y="58" width="384" height="600" rx="28" fill="#ffffff" stroke="#ccd3df" stroke-width="2"/>
+    <text x="32" y="112" font-size="40" font-weight="700" fill="#182236">专注</text>
+    <circle cx="82" cy="194" r="34" fill="none" stroke="#e5eaf2" stroke-width="8"/>
+    <circle cx="82" cy="194" r="34" fill="none" stroke="#4263eb" stroke-width="8" stroke-linecap="round" stroke-dasharray="207.6467 5.9816" transform="rotate(-90 82 194)"/>
+    <text class="timer" x="133" y="204" fill="#182236">24:18</text>
+    <text x="32" y="268" font-size="28" fill="#596579">第 2 轮 · 25 分钟</text>
+    <rect x="32" y="306" width="320" height="58" rx="14" fill="#4263eb"/><text class="button" x="192" y="335" dominant-baseline="middle" text-anchor="middle" fill="#ffffff">暂停</text>
+    <rect x="32" y="380" width="154" height="48" rx="12" fill="#edf1ff" stroke="#d6defe"/><text class="button" x="109" y="404" dominant-baseline="middle" text-anchor="middle" fill="#334fc4">重置</text>
+    <rect x="198" y="380" width="154" height="48" rx="12" fill="#ffffff" stroke="#c8cfdb"/><text class="button" x="275" y="404" dominant-baseline="middle" text-anchor="middle" fill="#273247">结束</text>
+    <text class="small" x="32" y="484" fill="#6d7789">设置</text><text class="small" x="292" y="484" fill="#6d7789">收起</text>
+  </g>
+  <g id="board-light-collapsed" transform="translate(468 190)">
+    <text class="label" x="0" y="0" fill="#172033">02 · Light / collapsed</text><text class="meta" x="0" y="42" fill="#596579">192 × 88 logical · same 192 width</text>
+    <rect x="0" y="58" width="384" height="176" rx="28" fill="#ffffff" stroke="#ccd3df" stroke-width="2"/>
+    <circle cx="62" cy="146" r="26" fill="none" stroke="#e5eaf2" stroke-width="7"/><circle cx="62" cy="146" r="26" fill="none" stroke="#4263eb" stroke-width="7" stroke-linecap="round" stroke-dasharray="158.78866 4.57416" transform="rotate(-90 62 146)"/>
+    <text x="106" y="154" font-size="46" font-weight="700" fill="#182236">24:18</text>
+    <rect x="260" y="103" width="96" height="86" rx="14" fill="#4263eb"/><text class="button" x="308" y="146" dominant-baseline="middle" text-anchor="middle" fill="#fff">暂停</text>
+    <text class="small" x="24" y="218" fill="#6d7789">设置</text><text class="small" x="296" y="218" fill="#6d7789">展开</text>
+  </g>
+  <g id="board-dark-expanded" transform="translate(892 190)">
+    <text class="label" x="0" y="0" fill="#172033">03 · Dark / expanded</text><text class="meta" x="0" y="42" fill="#596579">192 × 300 logical · follows system</text>
+    <rect x="0" y="58" width="384" height="600" rx="28" fill="#171b24" stroke="#394152" stroke-width="2"/>
+    <text x="32" y="112" font-size="40" font-weight="700" fill="#f3f5f8">专注</text>
+    <circle cx="82" cy="194" r="34" fill="none" stroke="#343b49" stroke-width="8"/><circle cx="82" cy="194" r="34" fill="none" stroke="#91a7ff" stroke-width="8" stroke-linecap="round" stroke-dasharray="207.6467 5.9816" transform="rotate(-90 82 194)"/>
+    <text class="timer" x="133" y="204" fill="#f3f5f8">24:18</text><text x="32" y="268" font-size="28" fill="#b4bdcc">第 2 轮 · 25 分钟</text>
+    <rect x="32" y="306" width="320" height="58" rx="14" fill="#91a7ff"/><text class="button" x="192" y="335" dominant-baseline="middle" text-anchor="middle" fill="#151a25">暂停</text>
+    <rect x="32" y="380" width="154" height="48" rx="12" fill="#252c39" stroke="#3b4557"/><text class="button" x="109" y="404" dominant-baseline="middle" text-anchor="middle" fill="#dce3ff">重置</text>
+    <rect x="198" y="380" width="154" height="48" rx="12" fill="#171b24" stroke="#596477"/><text class="button" x="275" y="404" dominant-baseline="middle" text-anchor="middle" fill="#f0f2f6">结束</text>
+    <text class="small" x="32" y="484" fill="#b4bdcc">设置</text><text class="small" x="292" y="484" fill="#b4bdcc">收起</text>
+  </g>
+  <g id="board-dark-collapsed" transform="translate(1316 190)">
+    <text class="label" x="0" y="0" fill="#172033">04 · Dark / collapsed</text><text class="meta" x="0" y="42" fill="#596579">192 × 88 logical · same 192 width</text>
+    <rect x="0" y="58" width="384" height="176" rx="28" fill="#171b24" stroke="#394152" stroke-width="2"/>
+    <circle cx="62" cy="146" r="26" fill="none" stroke="#343b49" stroke-width="7"/><circle cx="62" cy="146" r="26" fill="none" stroke="#91a7ff" stroke-width="7" stroke-linecap="round" stroke-dasharray="158.78866 4.57416" transform="rotate(-90 62 146)"/>
+    <text x="106" y="154" font-size="46" font-weight="700" fill="#f3f5f8">24:18</text><rect x="260" y="103" width="96" height="86" rx="14" fill="#91a7ff"/><text class="button" x="308" y="146" dominant-baseline="middle" text-anchor="middle" fill="#151a25">暂停</text>
+    <text class="small" x="24" y="218" fill="#b4bdcc">设置</text><text class="small" x="296" y="218" fill="#b4bdcc">展开</text>
+  </g>
+</svg>
